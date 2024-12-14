@@ -2,6 +2,7 @@
 
 ## Overview
 Webserv is a lightweight web server designed to run on Linux. It allows you to serve web content and handle HTTP requests with customizable configurations.
+The above code was created in the course of my Common Core at 42 School
 
 ## Getting Started
 To compile, simply run:
