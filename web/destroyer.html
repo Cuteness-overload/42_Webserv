@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Destroyer - WebSerVaBienOuBien Tester</title>
+		<link href="style.css" rel="stylesheet">
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li class="active"><a href="destroyer.html">Destroyer</a></li>
+					<li><a href="set_color.html">Set Color</a></li>
+					<li><a href="../cgi-bin/say_hello.py">Say Hello</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Destroyer</h1>
+			<p>Please select a file to destroy:</p>
+			<form id="deleteForm" method="post" action="../cgi-bin/destroyer.sh">
+				<select id="mySelect" name="option">
+				  <option value="fileok1">File that can be deleted</option>
+				  <option value="fileok2">File that can be deleted 2</option>
+				  <option value="filenok1">File without appropriate authorization</option>
+				  <option value="filenok2">File that does not exist</option>
+				</select>
+				<button type="submit">Delete</button>
+			  </form>
+		</main>
+	</body>
+</html>
